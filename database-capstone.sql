@@ -90,9 +90,9 @@ Insert Product
 		('001', 'Monitor', 250, 'each', (select vendors.Id from vendors where vendors.code = 'TGT'));
 
 Insert Request
-	(Description, Justification, Status, Total, UserId)
+	(Description, Justification, UserId)
 	values
-		('necessary stuff', 'needed to do my job', 'accepted', (select RequestLine.Quantity from RequestLine where RequestId = Id), (select id from Users where users.Firstname = 'Matt'));
+		('necessary stuff', 'needed to do my job', (select id from Users where users.Firstname = 'Matt'));
 Insert RequestLine
 	(RequestId, ProductId, quantity)
 	values
