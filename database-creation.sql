@@ -48,4 +48,12 @@ insert Customers (Code, Name)
 	('FCC', 'FC Cincinnati'),
 	('TQL', 'Total Quality Logistics')
 
+*/
 /*
+Alter table Customers 
+	add Updated datetime;
+	*/
+
+
+Alter table Customers 
+	alter column Name varchar(50) not null;
