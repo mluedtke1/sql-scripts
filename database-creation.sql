@@ -29,4 +29,3 @@ Insert assessments (studentid, Topic, Score)
 	values
 	((select Id from students where firstname = 'Matt' and lastname = 'Luedtke'),'Git', 100)
 
-select * from assessments
